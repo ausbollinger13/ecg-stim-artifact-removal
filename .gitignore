@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+# CLI outputs
+*_cleaned.csv
+*_cleaned.xlsx
+*_cleaned.json
+*_cleaned.mat
+*_diagnostics.json
+*_before_after.png
+stim_artifact_removal_summary.csv
+*_stim_artifact_removed/

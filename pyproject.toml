@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stim-artifact-removal"
+version = "1.0.0"
+description = "Remove periodic electrical-stimulation artifact from ECG recordings, with or without stim markers."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.22",
+    "scipy>=1.8",
+    "pandas>=1.4",
+    "neurokit2>=0.2.4",
+    "matplotlib>=3.5",
+]
+keywords = ["ECG", "HRV", "stimulation artifact", "vagus nerve stimulation", "taVNS", "signal processing"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+
+[project.optional-dependencies]
+xdf = ["pyxdf"]
+mat73 = ["h5py"]
+excel = ["openpyxl", "xlrd"]
+all = ["pyxdf", "h5py", "openpyxl", "xlrd"]
+dev = ["pytest", "pyxdf", "h5py", "openpyxl", "xlrd"]
+
+[project.scripts]
+stim-artifact-removal = "stim_artifact_removal.cli:main"
+
+[tool.setuptools]
+packages = ["stim_artifact_removal"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
