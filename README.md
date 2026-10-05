@@ -14,7 +14,7 @@ before. Colour: after. Two subjects recorded at 5 kHz and 25 kHz.*
 ## Install
 
 ```bash
-git clone https://github.com/<owner>/ecg-stim-artifact-removal.git
+git clone https://github.com/ausbollinger13/ecg-stim-artifact-removal.git
 cd ecg-stim-artifact-removal
 pip install -e .            # core
 pip install -e ".[all]"     # + XDF, MATLAB v7.3 and Excel readers
