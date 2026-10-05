@@ -8,7 +8,7 @@ timing is found from the signal itself.
 ![before/after on the example recordings](docs/figures/examples_grid.png)
 
 Example recordings, cleaned without stim markers. Grey:
-before. Color: after. Two subjects recorded at 5 kHz and 25 kHz.*
+before. Color: after. Two subjects recorded at 5 kHz and 25 kHz.
 
 ## Install
 
